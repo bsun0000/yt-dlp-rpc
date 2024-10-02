@@ -27,7 +27,7 @@ The server handles two GET requests:
 
 ### Get the video title and duration:
 ```
-/?get_title=<youtube_url>
+/?get_title=1&url=<youtube_url>
 ```
 - URL must be URL-encoded
 - Fetches the URL, looking for the title and duration variables. Implemented in a dumb way - without using yt-dlp
@@ -35,7 +35,7 @@ The server handles two GET requests:
 
 ### Get player information:
 ```
-/?get_player=<youtube_url>
+/?get_player=1&url=<youtube_url>
 ```
 - Invokes the yt-dlp module, requesting video information in JSON format (-J)
 - This is an example, all options are hardcoded inside server.py itself.
