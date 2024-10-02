@@ -48,8 +48,10 @@ It can be used as a standalone program or in combination with the MPV player:
 
 Add to your `mpv.conf` file:
 ```
-script-opts=ytdl_hook-ytdl_path=C:/Installed/yt-dlp-rpc.exe
+script-opts=ytdl_hook-ytdl_path=<path to the rpc-client program>
 ```
+
+Tested both on Windows and Linux.
 
 ## SECURITY NOTICE!
 
